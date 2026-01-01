@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<linker>
+  <assembly fullname="ProductiveNumbers">
+    <resource name="FSharpSignatureData.ProductiveNumbers" action="remove"></resource>
+    <resource name="FSharpSignatureCompressedData.ProductiveNumbers" action="remove"></resource>
+    <resource name="FSharpSignatureDataB.ProductiveNumbers" action="remove"></resource>
+    <resource name="FSharpSignatureCompressedDataB.ProductiveNumbers" action="remove"></resource>
+    <resource name="FSharpOptimizationData.ProductiveNumbers" action="remove"></resource>
+    <resource name="FSharpOptimizationCompressedData.ProductiveNumbers" action="remove"></resource>
+    <resource name="FSharpOptimizationDataB.ProductiveNumbers" action="remove"></resource>
+    <resource name="FSharpOptimizationCompressedDataB.ProductiveNumbers" action="remove"></resource>
+    <resource name="FSharpOptimizationInfo.ProductiveNumbers" action="remove"></resource>
+    <resource name="FSharpSignatureInfo.ProductiveNumbers" action="remove"></resource>
+  </assembly>
+</linker>
