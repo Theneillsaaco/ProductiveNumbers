@@ -27,3 +27,4 @@
 /home/isaac/Projects/ProductiveNumbers/ProductiveNumbers/obj/Debug/net10.0/ProductiveNumbers.pdb
 /home/isaac/Projects/ProductiveNumbers/ProductiveNumbers/obj/Debug/net10.0/ProductiveNumbers.genruntimeconfig.cache
 /home/isaac/Projects/ProductiveNumbers/ProductiveNumbers/obj/Debug/net10.0/ref/ProductiveNumbers.dll
+/home/isaac/Projects/ProductiveNumbers/ProductiveNumbers/obj/Debug/net10.0/ProductiveNumbers.sourcelink.json
