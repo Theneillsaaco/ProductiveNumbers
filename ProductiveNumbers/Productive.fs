@@ -1,5 +1,6 @@
 namespace ProductiveNumbers
 
+open System.Collections.Concurrent
 open ProductiveNumbers.Prime
 
 module Productive =
@@ -25,15 +26,24 @@ module Productive =
             ok
     
     let firstNProductives count =
-        let result = ResizeArray<int>()
+        let result = ConcurrentBag<int>()
         let mutable n = 0
         
         while result.Count < count do
-            if isProductive n then
-                result.Add n
-            n <- n + 1
+            let block = [|n .. n + 10_000|]
+            n <- n + 10_000
             
-        result |> List.ofSeq
+            block
+            |> Array.filter isCandidate 
+            |> Array.Parallel.iter (fun x ->
+                if isProductive x then
+                    result.Add x
+            )
+            
+        result
+        |> Seq.sort
+        |> Seq.take count
+        |> Seq.toList
         
     let nthProductive n =
         let mutable count = 0
@@ -41,7 +51,7 @@ module Productive =
         let mutable result = 0
         
         while count < n do
-            if isProductive x then
+            if isCandidate x && isProductive x then
                 count <- count + 1
                 result <- x
             x <- x + 1

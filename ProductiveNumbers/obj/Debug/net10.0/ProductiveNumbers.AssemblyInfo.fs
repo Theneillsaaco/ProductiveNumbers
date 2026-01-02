@@ -10,7 +10,7 @@ open System.Reflection
 [<assembly: System.Reflection.AssemblyCompanyAttribute("ProductiveNumbers")>]
 [<assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")>]
-[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4927b0f339c175429c3768f296b09159ac8b65f9")>]
+[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ee6e7983466cc3f6cd4d8978fb8972226c5c886")>]
 [<assembly: System.Reflection.AssemblyProductAttribute("ProductiveNumbers")>]
 [<assembly: System.Reflection.AssemblyTitleAttribute("ProductiveNumbers")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")>]
